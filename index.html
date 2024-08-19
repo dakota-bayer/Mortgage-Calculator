@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>New Mortgage Calculator</h1>
+    <form id="new-mortgage-form">
+      <label for="new-mortgage-loan-amount">Loan amount:</label>
+      <input id="new-mortgage-loan-amount" placeholder="$300,000"/>
+
+      <label for="new-mortgage-interest-rate">Interest rate:</label>
+      <input id="new-mortgage-interest-rate" placeholder="6.875%"/>
+      
+      <label for="new-mortgage-length">Length of time:</label>
+      <input id="new-mortgage-length" placeholder="30 years"/>
+
+      <label for="new-mortgage-taxes">Annual property taxes:</label>
+      <input id="new-mortgage-taxes" placeholder="$3,800"/>
+
+      <label for="new-mortgage-insurance">Annual homeowner's insurance:</label>
+      <input id="new-mortgage-insurance" placeholder="$600"/>
+
+      <button type="submit" id="new-mortgage-submit-button">Calculate</button>
+
+      <output id="new-mortgage-output"></output>
+    </form>
+
+    <h1>Existing Mortgage Payoff Calculator</h1>
+    <form id="mortgage-payoff-form">
+      <label for="mortgage-payoff-remaining-loan-amount">Remaining Loan amount:</label>
+      <input id="mortgage-payoff-remaining-loan-amount" placeholder="$288,783"/>
+
+      <label for="mortgage-payoff-interest-rate">Interest rate:</label>
+      <input id="mortgage-payoff-interest-rate" placeholder="6.875%"/>
+
+      <label for="mortgage-payoff-current-payment">Current monthly payment (base):</label>
+      <input id="mortgage-payoff-current-payment" placeholder="$2,326.52"/>
+
+      <label for="mortgage-payoff-current-escrow">Current monthly escrow payment:</label>
+      <input id="mortgage-payoff-current-escrow" placeholder="$355.52"/>
+      
+      <label for="mortgage-payoff-additional-principal">Additional monthly principal payment:</label>
+      <input id="mortgage-payoff-additional-principal" placeholder="$1,000"/>
+
+      <label for="mortgage-payoff-lump-sum">Lump sum payment:</label>
+      <input id="mortgage-payoff-lump-sum" placeholder="$140,000"/>
+
+      <label for="mortgage-payoff-estimated-market-rate">Estimated stock market return:</label>
+      <input id="mortgage-payoff-estimated-market-rate" placeholder="7%"/>
+
+      <button type="submit" id="mortgage-payoff-submit-button">Calculate</button>
+
+      <output id="existing-mortgage-output"></output>
+    </form>
+
+  </body>
+  <script src="./script.js"></script>
+</html>
